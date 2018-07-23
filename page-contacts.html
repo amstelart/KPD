@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>NTH start project</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  <!-- <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png"> -->
+  <!-- <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png"> -->
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet" media="screen">
+
+  <script>
+    // Маркер работающего javascript
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+    document.addEventListener('DOMContentLoaded', function(){
+      if (window.isMobile !== undefined) {
+        // console.log(isMobile);
+        if(isMobile.any) {
+          var rootClasses = ' is-mobile';
+          for (key in isMobile) {
+            if(typeof isMobile[key] === 'boolean' && isMobile[key] && key !== 'any') rootClasses += ' is-mobile--'+key;
+            if(typeof isMobile[key] === 'object' && key !== 'other') {
+              for (type in isMobile[key]) {
+                if(isMobile[key][type]) rootClasses += ' is-mobile--'+key+'-'+type;
+              }
+            }
+          }
+          document.documentElement.className += rootClasses;
+        }
+      }
+      else {
+        console.log('Классы для мобильных не добавлены: в сборке отсутствует isMobile.js');
+      }
+    });
+
+  </script>
+
+</head>
+
+<body>
+
+  <div id="panel">
+
+    <div class="page__inner page__inner--bg" style="background-image: url('img/page-bg.jpg');">
+
+      <div class="page__content">
+
+        <header class="page-header" role="banner">
+
+          <!-- <button class="toggle-button">☰</button> -->
+
+          <a href="index.html" class="logo">
+            <img src="img/logo.png" alt="logo">
+          </a>
+
+          <nav class="main-nav" role="navigation">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a href="page-choice.html" class="main-nav__link">
+                  Выбор дома
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">
+                  Строящиеся объекты
+                </a>
+              </li>
+              <li class="main-nav__item main-nav__item--active">
+                <a href="page-about.html" class="main-nav__link">
+                  Информация
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="page-about.html" class="main-nav__link">
+                  Акции
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="page-about.html" class="main-nav__link">
+                  Ипотека <span class="red-label">от 8.7%</span>
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="page-about.html" class="main-nav__link">
+                  Фотогалерея
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="page-population.html" class="main-nav__link">
+                  Заселение
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="page-contacts.html" class="main-nav__link">
+                  Контакты
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="header-phone">+7 (4712) 37-71-38</div>
+
+          <button class="main-nav__open-button  burger"><span></span></button>
+
+        </header>
+
+
+        <main role="main" class="page__main">
+          <ul class="breadcrumbs">
+            <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Главная</a></li>
+            <li class="breadcrumbs__item">Контакты</li>
+          </ul>
+          <h1 class="page__title">Контакты</h1>
+
+          <div class="map-box">
+            <div class="map-box__media">
+              <img src="img/map-image.jpg" alt="">
+            </div>
+            <div class="map-box__map">
+              <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A735bd01da4ece2e9d63789a4156cc737745dacf4c9728fa9b1fa5f93c77bb4d8&amp;width=100%25&amp;height=355&amp;lang=ru_RU&amp;scroll=false"></script>
+            </div>
+          </div>
+
+          <div class="content-box">
+            <h2>Предложения</h2>
+            <div class="content-box__two-row">
+              <div class="content-box__col">
+                <h5>Контактные телефоны:</h5>
+
+                <ul class="contacts-list">
+                  <li><b>Отдел снабжения:</b> +7 (4712) 37-76-50</li>
+                  <li><b>Приемная:</b> +7 (4712) 37-76-49</li>
+                  <li><b>Главный инженер:</b> +7 (4712) 37-74-31</li>
+                  <li><b>Отдел продаж:</b> +7 (4712) 37-71-38</li>
+                  <li><b>Юридический отдел:</b> +7 (4712) 37-82-73</li>
+                </ul>
+
+                <ul class="contacts-list">
+                  <li><b>E-mail:</b> info@zavodkpd.ru</li>
+                  <li><b>Отдел снабжения E-mail:</b> <a href="mailto:kpd-snab@yandex.ru">kpd-snab@yandex.ru</a></li>
+                  <li><b>Проектный отдел E-mail:</b> <a href="mailto:info@kpo.kpd.kursk@ya.ru">kpo.kpd.kursk@ya.ru</a></li>
+                  <li><b>Отдел продаж E-mail:</b> <a href="mailto:komerc@zavodkpd.ru">komerc@zavodkpd.ru</a></li>
+                  <li><b>Сайт Управляющей компании КПД:</b> <a href="#">uk-kpd.ru</a></li>
+                </ul>
+
+                <p>Внимание! <br>
+                  АО "Курский завод КПД им. А.Ф. Дериглазова" <br>
+                  НЕ работает ни с какими риэлторскими агентствами! <br>
+                  Остерегайтесь мошенничества!</p>
+                </div>
+                <div class="content-box__col">
+                  <h5>Реквизиты:</h5>
+                  <ul class="contacts-list">
+                    <li>АО «Курский завод крупнопанельного домостроения имени А.Ф. Дериглазова»</li>
+                    <li><b>ИНН:</b> 4630005929</li>
+                    <li><b>КПП:</b> 463201001</li>
+                    <li><b>Адрес:</b> 305018, г. Курск, пр-д Льговский, поворот 18</li>
+                    <li><b>Р/с:</b> 40702810600500000853</li>
+                  </ul>
+                  <h5>в Дополнительном офисе</h5>
+                  <ul class="contacts-list">
+                    <li>Промышленное отделение ПАО «Курскпромбанк»</li>
+                    <li><b>К/с:</b> 30101810800000000708</li>
+                    <li><b>БИК:</b> 043807708</li>
+                  </ul>
+                  <p>Размер расходов по изготовлению копий документов определяется из расчета 10 (десять) рублей за один лист формата А4, но не менее 40 рублей за один документ.
+                    Оплату можно произвести как через банковский счет указанный на сайте так и непосредственно через кассу общества.</p>
+                  </div>
+                </div>
+              </div>
+
+            </main>
+
+          </div>
+
+          <!-- <div class="page__footer-wrapper">
+
+            <footer class="page-footer" role="contentinfo">
+              <div class="page-footer__inner">
+                <ul class="f-contacts">
+                  <li>
+                    <svg class="f-contacts__icon" width="18" height="18">
+                      <use xlink:href="img/sprite-svg.svg#icon-phone"></use>
+                    </svg>
+                    <span>+7 (4712) 37-71-38</span>
+                  </li>
+                  <li>
+                    <svg class="f-contacts__icon" width="18" height="13">
+                      <use xlink:href="img/sprite-svg.svg#icon-mail"></use>
+                    </svg>
+                    <a href="mailto:info@zavodkpd.ru">info@zavodkpd.ru</a>
+                  </li>
+                </ul>
+                <p class="f-copyright">Разработка - <a href="#">Showbiz Interactive</a></p>
+              </div>
+            </footer>
+
+          </div> -->
+
+        </div>
+
+  </div>
+
+  <nav id="menu">
+    <button class="main-nav__close-button burger burger--close"><span></span></button>
+    <nav class="main-nav main-nav--open" role="navigation">
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a href="page-choice.html" class="main-nav__link">
+            Выбор дома
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__link">
+            Строящиеся объекты
+          </a>
+        </li>
+        <li class="main-nav__item main-nav__item--active">
+          <a href="page-about.html" class="main-nav__link">
+            Информация
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="page-about.html" class="main-nav__link">
+            Акции
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="page-about.html" class="main-nav__link">
+            Ипотека <span class="red-label">от 8.7%</span>
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="page-about.html" class="main-nav__link">
+            Фотогалерея
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="page-population.html" class="main-nav__link">
+            Заселение
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="page-contacts.html" class="main-nav__link">
+            Контакты
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </nav>
+  <script
+    src="https://code.jquery.com/jquery-2.2.1.min.js"
+    integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+    crossorigin="anonymous"></script>
+  <script src="js/script.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>NTH start project</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  <!-- <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png"> -->
+  <!-- <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png"> -->
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet" media="screen">
+
+  <script>
+    // Маркер работающего javascript
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+    document.addEventListener('DOMContentLoaded', function(){
+      if (window.isMobile !== undefined) {
+        // console.log(isMobile);
+        if(isMobile.any) {
+          var rootClasses = ' is-mobile';
+          for (key in isMobile) {
+            if(typeof isMobile[key] === 'boolean' && isMobile[key] && key !== 'any') rootClasses += ' is-mobile--'+key;
+            if(typeof isMobile[key] === 'object' && key !== 'other') {
+              for (type in isMobile[key]) {
+                if(isMobile[key][type]) rootClasses += ' is-mobile--'+key+'-'+type;
+              }
+            }
+          }
+          document.documentElement.className += rootClasses;
+        }
+      }
+      else {
+        console.log('Классы для мобильных не добавлены: в сборке отсутствует isMobile.js');
+      }
+    });
+
+  </script>
+
+</head>
+
+<body>
+
+  <div id="panel">
+    <div class="page__inner page__inner--bg" style="background-image: url('img/page-bg.jpg');">
+
+      <div class="page__content">
+
+        <header class="page-header" role="banner">
+
+          <!-- <button class="toggle-button">☰</button> -->
+
+          <a href="index.html" class="logo">
+            <img src="img/logo.png" alt="logo">
+          </a>
+
+          <nav class="main-nav" role="navigation">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a href="page-choice.html" class="main-nav__link">
+                  Выбор дома
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">
+                  Строящиеся объекты
+                </a>
+              </li>
+              <li class="main-nav__item main-nav__item--active">
+                <a href="page-about.html" class="main-nav__link">
+                  Информация
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="page-about.html" class="main-nav__link">
+                  Акции
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="page-about.html" class="main-nav__link">
+                  Ипотека <span class="red-label">от 8.7%</span>
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="page-about.html" class="main-nav__link">
+                  Фотогалерея
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="page-population.html" class="main-nav__link">
+                  Заселение
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="page-contacts.html" class="main-nav__link">
+                  Контакты
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="header-phone">+7 (4712) 37-71-38</div>
+
+          <button class="main-nav__open-button  burger"><span></span></button>
+
+        </header>
+
+
+        <main role="main" class="page__main">
+          <ul class="breadcrumbs">
+            <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Главная</a></li>
+            <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Выбор дома</a></li>
+            <li class="breadcrumbs__item">Жилой дом 10 (стр.35) мкр. 2, ж/р Северный</li>
+          </ul>
+          <h1 class="page__title">Жилой дом 10 (стр.35) мкр. 2, ж/р Северный</h1>
+
+          <div class="map-box">
+            <div class="map-box__media">
+              <div class="box-slider owl-carousel">
+                <img src="img/box-slider-img-01.jpg" alt="">
+                <img src="img/box-slider-img-01.jpg" alt="">
+                <img src="img/box-slider-img-01.jpg" alt="">
+              </div>
+            </div>
+            <div class="map-box__map">
+              <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A735bd01da4ece2e9d63789a4156cc737745dacf4c9728fa9b1fa5f93c77bb4d8&amp;width=100%25&amp;height=355&amp;lang=ru_RU&amp;scroll=false"></script>
+            </div>
+          </div>
+
+          <div class="content-box">
+            <h2 class="mt-0">Предложения</h2>
+            <p>1 и 2 комнатные квартиры в жилом районе Северный, улица Домостроителей 10 мкр.2 (стр.35 мкр. 2)</p>
+            <h3>1-комнатные квартиры</h3>
+            <ul class="list-unstyled">
+              <li>Стоимость м²: 36 000 руб.</li>
+              <li>Стоимость квартиры 37,15 м² : 1 337 400 руб.</li>
+              <li>Стоимость квартиры 38,6 м² — 1 389 600 руб.</li>
+            </ul>
+            <h3>2-комнатные квартиры</h3>
+            <ul class="list-unstyled">
+              <li>Стоимость м²: 36 000 руб.</li>
+              <li>Стоимость квартиры 59,2 м² : 2 131 200 руб.</li>
+              <li>Стоимость квартиры 61,25 м² — 2 205 000 руб.</li>
+            </ul>
+            <p>
+              <a href="#" class="btn btn--red">Оставить заявку</a>
+            </p>
+          </div>
+          <div class="plan-box">
+            <h2 class="mt-0">Планы этажей</h2>
+            <div class="plan-box__wrap">
+              <div class="plan-box__col">
+                <div class="plan-box__image">
+                  <a data-fancybox href="img/plan-image-02.jpg"><img src="img/plan-image-01.jpg" alt=""></a>
+                </div>
+                <h4 class="mb-0">План типового этажа</h4>
+              </div>
+              <div class="plan-box__col">
+                <div class="plan-box__image">
+                  <a data-fancybox href="img/plan-image-01.jpg"><img src="img/plan-image-02.jpg" alt=""></a>
+                </div>
+                <h4 class="mb-0">План первого этажа</h4>
+              </div>
+            </div>
+          </div>
+
+        </main>
+
+      </div>
+
+      <div class="page__footer-wrapper">
+
+        <footer class="page-footer" role="contentinfo">
+          <div class="page-footer__inner">
+            <ul class="f-contacts">
+              <li>
+                <svg class="f-contacts__icon" width="18" height="18">
+                  <use xlink:href="img/sprite-svg.svg#icon-phone"></use>
+                </svg>
+                <span>+7 (4712) 37-71-38</span>
+              </li>
+              <li>
+                <svg class="f-contacts__icon" width="18" height="13">
+                  <use xlink:href="img/sprite-svg.svg#icon-mail"></use>
+                </svg>
+                <a href="mailto:info@zavodkpd.ru">info@zavodkpd.ru</a>
+              </li>
+            </ul>
+            <p class="f-copyright">Разработка - <a href="#">Showbiz Interactive</a></p>
+          </div>
+        </footer>
+
+      </div>
+
+    </div>
+  </div>
+
+  <nav id="menu">
+    <button class="main-nav__close-button burger burger--close"><span></span></button>
+    <nav class="main-nav main-nav--open" role="navigation">
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a href="page-choice.html" class="main-nav__link">
+            Выбор дома
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__link">
+            Строящиеся объекты
+          </a>
+        </li>
+        <li class="main-nav__item main-nav__item--active">
+          <a href="page-about.html" class="main-nav__link">
+            Информация
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="page-about.html" class="main-nav__link">
+            Акции
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="page-about.html" class="main-nav__link">
+            Ипотека <span class="red-label">от 8.7%</span>
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="page-about.html" class="main-nav__link">
+            Фотогалерея
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="page-population.html" class="main-nav__link">
+            Заселение
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="page-contacts.html" class="main-nav__link">
+            Контакты
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </nav>
+  <script
+    src="https://code.jquery.com/jquery-2.2.1.min.js"
+    integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+    crossorigin="anonymous"></script>
+  <script src="js/script.min.js"></script>
+
+</body>
+</html>
