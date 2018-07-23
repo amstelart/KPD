@@ -1,0 +1,16 @@
+// В этом файле должны быть стили для БЭМ-блока f-copyright, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.f-copyright {
+
+  $block-name:                &; // #{$block-name}__element
+
+  font-size: 16px;
+
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+}

@@ -1,0 +1,36 @@
+// В этом файле должны быть стили для БЭМ-блока map-box, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.map-box {
+
+  $block-name:                &; // #{$block-name}__element
+
+  @include row;
+
+  &__media {
+    @include col();
+    @include col(lg, 6);
+    position: relative;
+
+    @media (min-width: $screen-lg) {
+      padding-right: 0 !important;
+    }
+
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__map {
+    @include col();
+    @include col(lg, 6);
+
+    @media (min-width: $screen-lg) {
+      padding-left: 0 !important;
+    }
+  }
+
+}

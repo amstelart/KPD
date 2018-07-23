@@ -1,0 +1,16 @@
+// В этом файле должны быть стили для БЭМ-блока header-phone, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.header-phone {
+
+  $block-name:                &; // #{$block-name}__element
+
+  background: #007dc6;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 15px 25px;
+  white-space: nowrap;
+
+}

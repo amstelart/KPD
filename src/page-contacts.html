@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>NTH start project</title>
+  <meta name="description" content="">
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+
+  <div id="panel">
+
+    <div class="page__inner page__inner--bg" style="background-image: url('img/page-bg.jpg');">
+
+      <div class="page__content">
+
+        @@include('blocks/page-header/page-header.html')
+
+        <main role="main" class="page__main">
+          <ul class="breadcrumbs">
+            <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Главная</a></li>
+            <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Контакты</a></li>
+          </ul>
+          <h1 class="page__title">Контакты</h1>
+
+          <div class="map-box">
+            <div class="map-box__media">
+              <img src="img/map-image.jpg" alt="">
+            </div>
+            <div class="map-box__map">
+              <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A735bd01da4ece2e9d63789a4156cc737745dacf4c9728fa9b1fa5f93c77bb4d8&amp;width=100%25&amp;height=355&amp;lang=ru_RU&amp;scroll=false"></script>
+            </div>
+          </div>
+
+          <div class="content-box">
+            <h2>Предложения</h2>
+            <div class="content-box__two-row">
+              <div class="content-box__col">
+                <h5>Контактные телефоны:</h5>
+
+                <ul class="contacts-list">
+                  <li><b>Отдел снабжения:</b> +7 (4712) 37-76-50</li>
+                  <li><b>Приемная:</b> +7 (4712) 37-76-49</li>
+                  <li><b>Главный инженер:</b> +7 (4712) 37-74-31</li>
+                  <li><b>Отдел продаж:</b> +7 (4712) 37-71-38</li>
+                  <li><b>Юридический отдел:</b> +7 (4712) 37-82-73</li>
+                </ul>
+
+                <ul class="contacts-list">
+                  <li><b>E-mail:</b> info@zavodkpd.ru</li>
+                  <li><b>Отдел снабжения E-mail:</b> <a href="mailto:kpd-snab@yandex.ru">kpd-snab@yandex.ru</a></li>
+                  <li><b>Проектный отдел E-mail:</b> <a href="mailto:info@kpo.kpd.kursk@ya.ru">kpo.kpd.kursk@ya.ru</a></li>
+                  <li><b>Отдел продаж E-mail:</b> <a href="mailto:komerc@zavodkpd.ru">komerc@zavodkpd.ru</a></li>
+                  <li><b>Сайт Управляющей компании КПД:</b> <a href="#">uk-kpd.ru</a></li>
+                </ul>
+
+                <p>Внимание! <br>
+                  АО "Курский завод КПД им. А.Ф. Дериглазова" <br>
+                  НЕ работает ни с какими риэлторскими агентствами! <br>
+                  Остерегайтесь мошенничества!</p>
+                </div>
+                <div class="content-box__col">
+                  <h5>Реквизиты:</h5>
+                  <ul class="contacts-list">
+                    <li>АО «Курский завод крупнопанельного домостроения имени А.Ф. Дериглазова»</li>
+                    <li><b>ИНН:</b> 4630005929</li>
+                    <li><b>КПП:</b> 463201001</li>
+                    <li><b>Адрес:</b> 305018, г. Курск, пр-д Льговский, поворот 18</li>
+                    <li><b>Р/с:</b> 40702810600500000853</li>
+                  </ul>
+                  <h5>в Дополнительном офисе</h5>
+                  <ul class="contacts-list">
+                    <li>Промышленное отделение ПАО «Курскпромбанк»</li>
+                    <li><b>К/с:</b> 30101810800000000708</li>
+                    <li><b>БИК:</b> 043807708</li>
+                  </ul>
+                  <p>Размер расходов по изготовлению копий документов определяется из расчета 10 (десять) рублей за один лист формата А4, но не менее 40 рублей за один документ.
+                    Оплату можно произвести как через банковский счет указанный на сайте так и непосредственно через кассу общества.</p>
+                  </div>
+                </div>
+              </div>
+
+            </main>
+
+          </div>
+
+          <div class="page__footer-wrapper">
+            @@include('blocks/page-footer/page-footer.html')
+          </div>
+
+        </div>
+
+  </div>
+
+  <nav id="menu">
+    <button class="main-nav__close-button burger burger--close"><span></span></button>
+    <nav class="main-nav main-nav--open" role="navigation">
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a href="page-choice.html" class="main-nav__link">
+            Выбор дома
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__link">
+            Строящиеся объекты
+          </a>
+        </li>
+        <li class="main-nav__item main-nav__item--active">
+          <a href="page-about.html" class="main-nav__link">
+            Информация
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="page-about.html" class="main-nav__link">
+            Акции
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="page-about.html" class="main-nav__link">
+            Ипотека <span class="red-label">от 8.7%</span>
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="page-about.html" class="main-nav__link">
+            Фотогалерея
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="page-population.html" class="main-nav__link">
+            Заселение
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="page-contacts.html" class="main-nav__link">
+            Контакты
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </nav>
+
+  @@include('_include/page_bottom.html')
+</body>
+</html>

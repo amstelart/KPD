@@ -1,0 +1,21 @@
+// В этом файле должны быть стили для БЭМ-блока plan-box, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.plan-box {
+
+  $block-name:                &; // #{$block-name}__element
+
+  background: #ededed;
+  padding: 30px;
+
+  &__wrap {
+    @include row;
+  }
+
+  &__col {
+    @include col();
+    @include col(lg, 6);
+  }
+
+}

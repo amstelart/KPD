@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>NTH start project</title>
+  <meta name="description" content="">
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+
+  <div id="panel">
+    <div class="page__inner page__inner--bg" style="background-image: url('img/page-bg.jpg');">
+
+      <div class="page__content">
+
+        @@include('blocks/page-header/page-header.html')
+
+        <main role="main" class="page__main">
+          <ul class="breadcrumbs">
+            <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Главная</a></li>
+            <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Выбор дома</a></li>
+            <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Жилой дом 10 (стр.35) мкр. 2, ж/р Северный</a></li>
+          </ul>
+          <h1 class="page__title">Жилой дом 10 (стр.35) мкр. 2, ж/р Северный</h1>
+
+          <div class="map-box">
+            <div class="map-box__media">
+              <div class="box-slider owl-carousel">
+                <img src="img/box-slider-img-01.jpg" alt="">
+                <img src="img/box-slider-img-01.jpg" alt="">
+                <img src="img/box-slider-img-01.jpg" alt="">
+              </div>
+            </div>
+            <div class="map-box__map">
+              <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A735bd01da4ece2e9d63789a4156cc737745dacf4c9728fa9b1fa5f93c77bb4d8&amp;width=100%25&amp;height=355&amp;lang=ru_RU&amp;scroll=false"></script>
+            </div>
+          </div>
+
+          <div class="content-box">
+            <h2 class="mt-0">Предложения</h2>
+            <p>1 и 2 комнатные квартиры в жилом районе Северный, улица Домостроителей 10 мкр.2 (стр.35 мкр. 2)</p>
+            <h3>1-комнатные квартиры</h3>
+            <ul class="list-unstyled">
+              <li>Стоимость м²: 36 000 руб.</li>
+              <li>Стоимость квартиры 37,15 м² : 1 337 400 руб.</li>
+              <li>Стоимость квартиры 38,6 м² — 1 389 600 руб.</li>
+            </ul>
+            <h3>2-комнатные квартиры</h3>
+            <ul class="list-unstyled">
+              <li>Стоимость м²: 36 000 руб.</li>
+              <li>Стоимость квартиры 59,2 м² : 2 131 200 руб.</li>
+              <li>Стоимость квартиры 61,25 м² — 2 205 000 руб.</li>
+            </ul>
+            <p>
+              <a href="#" class="btn btn--red">Оставить заявку</a>
+            </p>
+          </div>
+          <div class="plan-box">
+            <h2 class="mt-0">Планы этажей</h2>
+            <div class="plan-box__wrap">
+              <div class="plan-box__col">
+                <div class="plan-box__image">
+                  <a data-fancybox href="img/plan-image-02.jpg"><img src="img/plan-image-01.jpg" alt=""></a>
+                </div>
+                <h4 class="mb-0">План типового этажа</h4>
+              </div>
+              <div class="plan-box__col">
+                <div class="plan-box__image">
+                  <a data-fancybox href="img/plan-image-01.jpg"><img src="img/plan-image-02.jpg" alt=""></a>
+                </div>
+                <h4 class="mb-0">План первого этажа</h4>
+              </div>
+            </div>
+          </div>
+
+        </main>
+
+      </div>
+
+      <div class="page__footer-wrapper">
+        @@include('blocks/page-footer/page-footer.html')
+      </div>
+
+    </div>
+  </div>
+
+  <nav id="menu">
+    <button class="main-nav__close-button burger burger--close"><span></span></button>
+    <nav class="main-nav main-nav--open" role="navigation">
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a href="page-choice.html" class="main-nav__link">
+            Выбор дома
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__link">
+            Строящиеся объекты
+          </a>
+        </li>
+        <li class="main-nav__item main-nav__item--active">
+          <a href="page-about.html" class="main-nav__link">
+            Информация
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="page-about.html" class="main-nav__link">
+            Акции
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="page-about.html" class="main-nav__link">
+            Ипотека <span class="red-label">от 8.7%</span>
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="page-about.html" class="main-nav__link">
+            Фотогалерея
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="page-population.html" class="main-nav__link">
+            Заселение
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="page-contacts.html" class="main-nav__link">
+            Контакты
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </nav>
+
+  @@include('_include/page_bottom.html')
+</body>
+</html>

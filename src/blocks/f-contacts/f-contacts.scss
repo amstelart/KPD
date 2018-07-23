@@ -1,0 +1,34 @@
+// В этом файле должны быть стили для БЭМ-блока f-contacts, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.f-contacts {
+
+  $block-name:                &; // #{$block-name}__element
+
+  list-style: none;
+  padding: 0;
+  margin-top: 0.6875em;
+  margin-bottom: 0.6875em;
+
+  li {
+    display: inline-block;
+    vertical-align: middle;
+
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+
+  li+li {
+    margin-left: 60px;
+  }
+
+  &__icon {
+    fill: #fff;
+    margin-right: 3px;
+    vertical-align: middle;
+  }
+
+}
