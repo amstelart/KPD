@@ -14,7 +14,7 @@
   }
 
   .page-header {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
@@ -45,8 +45,7 @@
 .cd-section {
   min-height: 100%;
   position: relative;
-  padding: 2em 120px;
-  color: #fff;
+  // color: #fff;
 
   background-image: url('../img/page-bg.jpg');
   background-size: cover;
@@ -123,10 +122,14 @@
   top: 50%;
   bottom: auto;
   transform: translateY(-50%);
-  z-index: 1;
+  z-index: 100;
 
   ul {
     list-style: none;
+  }
+
+  @media (max-width: ($screen-xl - 1)) {
+    right: 0;
   }
 }
 #cd-vertical-nav li {

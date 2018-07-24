@@ -1,0 +1,87 @@
+// В этом файле должны быть стили для БЭМ-блока main-section, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.main-section {
+
+  $block-name:                &; // #{$block-name}__element
+
+  display: flex;
+  align-items: center;
+  padding: 3em 120px;
+
+  @media (max-width: ($screen-xl - 1)) {
+    display: block;
+    min-height: auto;
+    padding: 1em 30px;
+  }
+
+  &__inner {
+    // @include container;
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  &__row {
+    @include row;
+    align-items: center;
+
+    &--slider {
+
+      #{$block-name}__header {
+        @include col();
+        @include col(xl, 2);
+
+        @media (max-width: ($screen-xl - 1)) {
+          margin-bottom: 30px;
+        }
+      }
+
+      #{$block-name}__body {
+        @include col();
+        @include col(xl, 8);
+      }
+    }
+  }
+
+  &__header {
+    @include col();
+    @include col(xl, 5);
+
+    @media (max-width: ($screen-xl - 1)) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__body {
+    @include col();
+    @include col(xl, 7);
+  }
+
+  &__cards {
+    @include row;
+
+    .card {
+      @include col();
+      @include col(md, 6);
+    }
+  }
+
+  &__title {
+    font-family: 'Bebas Neue';
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 56px;
+    line-height: 1em;
+
+    @media (max-width: ($screen-lg - 1)) {
+      font-size: 34px;
+    }
+  }
+
+}

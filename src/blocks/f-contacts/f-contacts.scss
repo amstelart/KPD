@@ -11,6 +11,16 @@
   margin-top: 0.6875em;
   margin-bottom: 0.6875em;
 
+  @media (max-width: $screen-sm) {
+    li {
+      display: block;
+    }
+    li+li {
+      margin-left: 0;
+      margin-top: 10px;
+    }
+  }
+
   li {
     display: inline-block;
     vertical-align: middle;

@@ -17,19 +17,20 @@ $text-color:                  hsl(0, 0%, 10%) !default;
 
   &__item {
     display: inline-block;
-    margin-right: 0.6em;
+    margin-right: 0.4em;
     white-space: nowrap;
+    color: #fff;
 
     &:not(:last-child):after {
-      content: '>';
+      content: '—';
       display: inline-block;
-      margin-left: 0.8em;
-      color: $gray;
+      margin-left: 0.6em;
+      color: #9fa0a5;
     }
   }
 
   &__link {
-    color: #fff;
+    color: #9fa0a5;
     text-decoration: none;
 
     &:hover,

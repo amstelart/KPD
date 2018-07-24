@@ -73,7 +73,8 @@
     "main": [],
     "intro": [],
     "f-contacts": [],
-    "f-copyright": []
+    "f-copyright": [],
+    "main-section": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

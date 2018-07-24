@@ -34,6 +34,7 @@
 
   &__content {
     flex-grow: 1;
+    margin-bottom: 30px;
   }
 
   &__title {
@@ -51,6 +52,10 @@
     .content-box {
       background: #fff;
       padding: 30px;
+    }
+
+    #{$block-name}__content {
+      margin-bottom: 0;
     }
   }
 
@@ -99,6 +104,7 @@ select,
 // summary,
 textarea {
   touch-action: manipulation;
+  outline: none;
 }
 
 // We love EDGE! This is a browser!

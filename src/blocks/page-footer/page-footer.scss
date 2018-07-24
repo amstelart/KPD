@@ -6,6 +6,8 @@
 
   $block-name:                &; // #{$block-name}__element
 
+  color: #fff;
+
   &__inner {
     display: flex;
     flex-wrap: wrap;

@@ -6,6 +6,10 @@
 
   $block-name:                &; // #{$block-name}__element
 
+  &--main {
+    border: 4px solid #fff;
+  }
+
   @media (min-width: $screen-lg) {
 
     height: 100%;

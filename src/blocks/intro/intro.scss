@@ -11,6 +11,14 @@
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
+  padding: 3em 120px;
+  min-height: 100vh;
+
+  @media (max-width: ($screen-xl - 1)) {
+    display: block;
+    min-height: auto;
+    padding: 200px 30px 100px 30px;
+  }
 
   &__inner {
     flex-grow: 1;
@@ -23,10 +31,16 @@
     max-width: 670px;
     min-height: 100%;
     flex-grow: 1;
+    color: #fff;
+
+    @media (max-width: ($screen-xl - 1)) {
+      margin-bottom: 30px;
+    }
 
     h1 {
 
       margin: 0;
+      line-height: 1;
 
       span {
         font-size: 24px;

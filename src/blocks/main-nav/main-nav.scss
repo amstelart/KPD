@@ -24,6 +24,14 @@ $transition-time:             0.3s !default;
   position: relative;
   z-index: 10;
 
+  @media (max-width: ($menu-desktop-width - 1)) {
+    display: none;
+
+    &.main-nav--open {
+      display: block;
+    }
+  }
+
   // первый уровень
   &__list {
     margin: 0;
