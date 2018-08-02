@@ -66,6 +66,7 @@ document.addEventListener('DOMContentLoaded', function(){
     codeShowTriggers[i].addEventListener('click', function(){
       this.closest('.catalog__part--dropdown').querySelector('.catalog__part-body').classList.toggle('catalog__part-body--shown');
       this.closest('.catalog__part--dropdown').querySelector('.catalog__part-show-trigger').classList.toggle('catalog__part-show-trigger--open');
+      this.closest('.catalog__part--dropdown').querySelector('.catalog__part-show-text').textContent = this.textContent === 'Раскрыть' ? 'Скрыть' : 'Раскрыть';
     });
   }
 

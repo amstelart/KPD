@@ -48,6 +48,7 @@
     left: 100%;
     top: 0;
     padding-right: 25px;
+    min-width: 100px;
 
     &--open {
       .catalog__part-show-trigger-icon {
