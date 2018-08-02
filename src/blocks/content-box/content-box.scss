@@ -6,6 +6,8 @@
 
   $block-name:                &; // #{$block-name}__element
 
+  font-family: 'Open Sans';
+
   &__two-row {
     @include row;
   }
@@ -13,6 +15,10 @@
   &__col {
     @include col();
     @include col(lg, 6);
+  }
+
+  p {
+    line-height: 1.6
   }
 
 }

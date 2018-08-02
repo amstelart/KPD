@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>NTH start project</title>
+  <title>КПД</title>
   <meta name="description" content="">
   @@include('_include/page_head.html')
 </head>
@@ -22,9 +22,22 @@
           <p>Является действующим предприятием по выпуску железобетонных конструкций для строительства жилых домов, столярных изделий, товарного бетона, раствора, фундаментных блоков, различных конструкций и оборудования</p>
           <a href="#" class="btn btn--red">Выбор дома</a>
         </div>
+        <div class="intro__info">
+          <p>Область для текста, который может занять несколько строчек</p>
+        </div>
       </div>
       @@include('blocks/page-footer/page-footer.html')
-      <a href="#section2" class="cd-scroll-down cd-img-replace">scroll down</a>
+      <!-- <a href="#section2" class="cd-scroll-down cd-scroll-down--intro">scroll down</a> -->
+
+      <a href="#section2" class="mouse-wrapper cd-scroll-down">
+        <div class="mouse">
+          <div class="wheel"></div>
+        </div>
+        <div class="mouse__text">
+          <span>Просмотр объектов</span>
+        </div>
+      </a>
+
     </section><!-- cd-section -->
 
     <section id="section2" class="cd-section main-section">
@@ -48,7 +61,7 @@
       <div class="main-section__inner">
         <div class="main-section__row">
           <div class="main-section__header">
-            <h2 class="main-section__title">Квартиры в сданных домах</h2>
+            <h2 class="main-section__title">Квартиры в<br> сданных домах</h2>
             <a class="btn btn--red" href="#">Все варианты</a>
           </div>
           <div class="main-section__body">
@@ -170,7 +183,7 @@
       <div class="main-section__inner">
         <div class="main-section__row">
           <div class="main-section__header">
-            <h2 class="main-section__title">Квартиры в строящихся объектах</h2>
+            <h2 class="main-section__title">Квартиры в<br> строящихся объектах</h2>
             <a class="btn btn--red" href="#">Все варианты</a>
           </div>
           <div class="main-section__body">
@@ -280,37 +293,46 @@
       </div>
     </section><!-- cd-section -->
 
+    <!-- <button class="btn" type="button" data-toggle="modal" data-target="#modal-start">Показать модальное окно 1</button> -->
+
   </div>
+
+  <a href="#" class="to-top" id="toTop">
+    <svg width="32" height="32">
+      <use xlink:href="img/sprite-svg.svg#temp-icon-left-arrow"></use>
+    </svg>
+    <div class="to-top__text">Наверх</div>
+  </a>
 
   <nav id="cd-vertical-nav">
     <ul>
       <li>
         <a href="#section1" data-number="1">
-          <span class="cd-dot"></span>
+          <span class="cd-dot"><span class="cd-num">1</span></span>
           <span class="cd-label">О заводе</span>
         </a>
       </li>
       <li>
         <a href="#section2" data-number="2">
-          <span class="cd-dot"></span>
+          <span class="cd-dot"><span class="cd-num">2</span></span>
           <span class="cd-label">Акции</span>
         </a>
       </li>
       <li>
         <a href="#section3" data-number="3">
-          <span class="cd-dot"></span>
+          <span class="cd-dot"><span class="cd-num">3</span></span>
           <span class="cd-label">квартиры</span>
         </a>
       </li>
       <li>
         <a href="#section4" data-number="4">
-          <span class="cd-dot"></span>
+          <span class="cd-dot"><span class="cd-num">4</span></span>
           <span class="cd-label">квартиры</span>
         </a>
       </li>
       <li>
         <a href="#section5" data-number="5">
-          <span class="cd-dot"></span>
+          <span class="cd-dot"><span class="cd-num">5</span></span>
           <span class="cd-label">Новости</span>
         </a>
       </li>
@@ -331,10 +353,24 @@
             Строящиеся объекты
           </a>
         </li>
-        <li class="main-nav__item main-nav__item--active">
-          <a href="page-about.html" class="main-nav__link">
+        <li class="main-nav__item">
+          <a href="" class="main-nav__link">
             Информация
           </a>
+          <div class="main-nav__sublist-wrapper  main-nav__sublist-wrapper--lvl-2">
+            <ul class="main-nav__list  main-nav__list--lvl-2">
+              <li class="main-nav__item  main-nav__item--lvl-2">
+                <a href="" class="main-nav__link  main-nav__link--lvl-2">
+                  Отчетность
+                </a>
+              </li>
+              <li class="main-nav__item  main-nav__item--lvl-2">
+                <a href="" class="main-nav__link  main-nav__link--lvl-2">
+                  О заводе
+                </a>
+              </li>
+            </ul>
+          </div>
         </li>
         <li class="main-nav__item">
           <a href="page-about.html" class="main-nav__link">
@@ -364,6 +400,17 @@
       </ul>
     </nav>
   </nav>
+
+  <div id="modal-start" class="modal modal--start" tabindex="-1" role="dialog">
+    <div class="modal__dialog" role="document">
+      <div class="modal__content">
+        <div class="modal__banner">
+          <a href="#" class="close  modal__close" data-dismiss="modal" aria-label="Закрыть"><span></span></a>
+          <img src="img/image-slide-01.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
 
   @@include('_include/page_bottom.html')
 </body>

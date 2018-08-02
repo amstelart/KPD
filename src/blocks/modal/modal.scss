@@ -117,6 +117,29 @@ $z-index-modal:               100 !default;
       align-items: center;
     }
   }
+
+  &--start {
+
+    .modal__dialog {
+      width: 1200px;
+      height: auto;
+      margin: 20px;
+    }
+
+    .modal__content {
+      background: transparent;
+      justify-content: center;
+    }
+
+    .modal__banner {
+      position: relative;
+    }
+
+    & ~ .modal__backdrop {
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+
+  }
 }
 
 

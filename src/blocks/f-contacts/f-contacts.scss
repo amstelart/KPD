@@ -24,6 +24,8 @@
   li {
     display: inline-block;
     vertical-align: middle;
+    padding-left: 25px;
+    position: relative;
 
     a {
       color: #fff;
@@ -36,9 +38,11 @@
   }
 
   &__icon {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
     fill: #fff;
-    margin-right: 3px;
-    vertical-align: middle;
   }
 
 }

@@ -1,4 +1,8 @@
 // Если на проекте jQuery
+$(window).on('load',function(){
+  $('#modal-start').modal('show');
+});
+
 $( document ).ready(function() {
 
     $(".box-slider").owlCarousel({
@@ -7,7 +11,7 @@ $( document ).ready(function() {
       dots:true,
       loop: true,
       navText: ['<svg width="100%" height="100%" viewBox="0 0 11 20"><path style="fill:none;stroke-width: 1px;" d="M9.554,1.001l-8.607,8.607l8.607,8.606"/></svg>', '<svg width="100%" height="100%" viewBox="0 0 11 20" version="1.1"><path style="fill:none;stroke-width: 1px;" d="M1.054,18.214l8.606,-8.606l-8.606,-8.607"/></svg>'],
-      center: true,
+      center: false,
       responsive : {
         0 : {
           items: 1,
@@ -54,6 +58,18 @@ $( document ).ready(function() {
 
 });
 
+document.addEventListener('DOMContentLoaded', function(){
+
+  // Открытие/закрытие блока с кодом
+  var codeShowTriggers = document.querySelectorAll('.catalog__part-show-trigger');
+  for (var i = 0; i < codeShowTriggers.length; i++) {
+    codeShowTriggers[i].addEventListener('click', function(){
+      this.closest('.catalog__part--dropdown').querySelector('.catalog__part-body').classList.toggle('catalog__part-body--shown');
+      this.closest('.catalog__part--dropdown').querySelector('.catalog__part-show-trigger').classList.toggle('catalog__part-show-trigger--open');
+    });
+  }
+
+});
 
 // Изоляция без jQuery
 // (function(){

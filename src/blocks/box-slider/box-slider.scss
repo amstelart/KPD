@@ -8,6 +8,7 @@
 
   &--main {
     border: 4px solid #fff;
+    max-width: 1200px;
   }
 
   @media (min-width: $screen-lg) {

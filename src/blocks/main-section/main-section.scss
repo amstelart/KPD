@@ -9,11 +9,16 @@
   display: flex;
   align-items: center;
   padding: 3em 120px;
+  min-height: 100vh;
 
   @media (max-width: ($screen-xl - 1)) {
     display: block;
     min-height: auto;
     padding: 1em 30px;
+  }
+
+  @media (max-width: ($screen-sm - 1)) {
+    padding: 1em 5px;
   }
 
   &__inner {
@@ -24,6 +29,16 @@
     margin-right: auto;
     padding-left: 10px;
     padding-right: 10px;
+
+
+    // @media (min-width: $screen-lg) {
+    //   padding-right: 140px;
+    // }
+
+    @media (min-width: $screen-xl) {
+      padding-right: 140px;
+    }
+
   }
 
   &__row {
@@ -43,7 +58,7 @@
 
       #{$block-name}__body {
         @include col();
-        @include col(xl, 8);
+        @include col(xl, 10);
       }
     }
   }
@@ -78,6 +93,8 @@
     letter-spacing: 1px;
     font-size: 56px;
     line-height: 1em;
+    margin-top: 40px;
+    margin-bottom: 25px;
 
     @media (max-width: ($screen-lg - 1)) {
       font-size: 34px;

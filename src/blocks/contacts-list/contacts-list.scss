@@ -7,5 +7,17 @@
   $block-name:                &; // #{$block-name}__element
   list-style: none;
   padding-left: 0;
+  color: #1f1e1e;
+  font-family: 'Open Sans';
+  margin-bottom: 20px;
+
+  li + li {
+    margin-top: 6px;
+  }
+
+  b {
+    color: #1f1e1e;
+    font-weight: 600;
+  }
 
 }
