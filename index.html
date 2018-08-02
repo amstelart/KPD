@@ -62,16 +62,32 @@
               Выбор дома
             </a>
           </li>
-          <li class="main-nav__item">
+          <li class="main-nav__item main-nav__item--active">
             <a href="#" class="main-nav__link">
               Строящиеся объекты
             </a>
           </li>
-          <li class="main-nav__item main-nav__item--active">
-            <a href="page-about.html" class="main-nav__link">
+
+          <li class="main-nav__item">
+            <a href="" class="main-nav__link">
               Информация
             </a>
+            <div class="main-nav__sublist-wrapper  main-nav__sublist-wrapper--lvl-2">
+              <ul class="main-nav__list  main-nav__list--lvl-2">
+                <li class="main-nav__item  main-nav__item--lvl-2">
+                  <a href="" class="main-nav__link  main-nav__link--lvl-2">
+                    Отчетность
+                  </a>
+                </li>
+                <li class="main-nav__item  main-nav__item--lvl-2">
+                  <a href="" class="main-nav__link  main-nav__link--lvl-2">
+                    О заводе
+                  </a>
+                </li>
+              </ul>
+            </div>
           </li>
+
           <li class="main-nav__item">
             <a href="#section2" class="main-nav__link cd-scroll-down">
               Акции
@@ -406,37 +422,46 @@
       </div>
     </section><!-- cd-section -->
 
+    <!-- <button class="btn" type="button" data-toggle="modal" data-target="#modal-start">Показать модальное окно 1</button> -->
+
   </div>
+
+  <a href="#" class="to-top" id="toTop">
+    <svg width="32" height="32">
+      <use xlink:href="img/sprite-svg.svg#temp-icon-left-arrow"></use>
+    </svg>
+    <div class="to-top__text">Наверх</div>
+  </a>
 
   <nav id="cd-vertical-nav">
     <ul>
       <li>
         <a href="#section1" data-number="1">
-          <span class="cd-dot"></span>
+          <span class="cd-dot"><span class="cd-num">1</span></span>
           <span class="cd-label">О заводе</span>
         </a>
       </li>
       <li>
         <a href="#section2" data-number="2">
-          <span class="cd-dot"></span>
+          <span class="cd-dot"><span class="cd-num">2</span></span>
           <span class="cd-label">Акции</span>
         </a>
       </li>
       <li>
         <a href="#section3" data-number="3">
-          <span class="cd-dot"></span>
+          <span class="cd-dot"><span class="cd-num">3</span></span>
           <span class="cd-label">квартиры</span>
         </a>
       </li>
       <li>
         <a href="#section4" data-number="4">
-          <span class="cd-dot"></span>
+          <span class="cd-dot"><span class="cd-num">4</span></span>
           <span class="cd-label">квартиры</span>
         </a>
       </li>
       <li>
         <a href="#section5" data-number="5">
-          <span class="cd-dot"></span>
+          <span class="cd-dot"><span class="cd-num">5</span></span>
           <span class="cd-label">Новости</span>
         </a>
       </li>
@@ -457,10 +482,24 @@
             Строящиеся объекты
           </a>
         </li>
-        <li class="main-nav__item main-nav__item--active">
-          <a href="page-about.html" class="main-nav__link">
+        <li class="main-nav__item">
+          <a href="" class="main-nav__link">
             Информация
           </a>
+          <div class="main-nav__sublist-wrapper  main-nav__sublist-wrapper--lvl-2">
+            <ul class="main-nav__list  main-nav__list--lvl-2">
+              <li class="main-nav__item  main-nav__item--lvl-2">
+                <a href="" class="main-nav__link  main-nav__link--lvl-2">
+                  Отчетность
+                </a>
+              </li>
+              <li class="main-nav__item  main-nav__item--lvl-2">
+                <a href="" class="main-nav__link  main-nav__link--lvl-2">
+                  О заводе
+                </a>
+              </li>
+            </ul>
+          </div>
         </li>
         <li class="main-nav__item">
           <a href="page-about.html" class="main-nav__link">
@@ -490,6 +529,17 @@
       </ul>
     </nav>
   </nav>
+
+  <div id="modal-start" class="modal modal--start" tabindex="-1" role="dialog">
+    <div class="modal__dialog" role="document">
+      <div class="modal__content">
+        <div class="modal__banner">
+          <a href="#" class="close  modal__close" data-dismiss="modal" aria-label="Закрыть"><span></span></a>
+          <img src="img/image-slide-01.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
   <script
     src="https://code.jquery.com/jquery-2.2.1.min.js"
     integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
