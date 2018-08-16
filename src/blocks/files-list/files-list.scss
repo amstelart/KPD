@@ -1,0 +1,50 @@
+// В этом файле должны быть стили для БЭМ-блока files-list, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.files-list {
+
+  $block-name:                &; // #{$block-name}__element
+
+  list-style: none;
+  padding: 0;
+  margin: 2em 0;
+  font-size: 18px;
+  line-height: 1.4;
+
+  @media (max-width: ($screen-sm - 1)) {
+    font-size: 16px;
+  }
+
+  &__item {
+    margin-bottom: 1.7em;
+  }
+
+  &__link {
+    display: inline-block;
+    position: relative;
+    padding-left: 30px;
+  }
+
+  &__icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    &--doc {
+      fill: #3c8ecf;
+    }
+
+    &--pdf {
+      fill: #e13838;
+    }
+
+    &--zip {
+      fill: #e1a338;
+    }
+
+    &--rar {
+      fill: #9f38e1;
+    }
+  }
+}

@@ -74,7 +74,9 @@
     "intro": [],
     "f-contacts": [],
     "f-copyright": [],
-    "main-section": []
+    "main-section": [],
+    "albums-catalog": [],
+    "files-list": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

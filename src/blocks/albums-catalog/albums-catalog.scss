@@ -1,0 +1,18 @@
+// В этом файле должны быть стили для БЭМ-блока albums-catalog, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.albums-catalog {
+
+  $block-name:                &; // #{$block-name}__element
+
+  @include row;
+
+  .card {
+    @include col();
+    @include col(md, 6);
+    @include col(lg, 6);
+    @include col(xl, 4);
+  }
+
+}
