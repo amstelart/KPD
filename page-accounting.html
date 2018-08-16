@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>NTH start project</title>
+  <meta name="description" content=""> <!--DEV Такой комментарий не попадет в собранный HTML
+<meta name="viewport" content="width=1000">
+-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no">
+
+<!-- <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png"> -->
+<!-- <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png"> -->
+<link rel="shortcut icon" href="img/favicon.ico">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=cyrillic" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
+<link href="css/style.min.css" rel="stylesheet" media="screen">
+
+<script>
+  // Маркер работающего javascript
+  document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+  document.addEventListener('DOMContentLoaded', function(){
+    if (window.isMobile !== undefined) {
+      // console.log(isMobile);
+      if(isMobile.any) {
+        var rootClasses = ' is-mobile';
+        for (key in isMobile) {
+          if(typeof isMobile[key] === 'boolean' && isMobile[key] && key !== 'any') rootClasses += ' is-mobile--'+key;
+          if(typeof isMobile[key] === 'object' && key !== 'other') {
+            for (type in isMobile[key]) {
+              if(isMobile[key][type]) rootClasses += ' is-mobile--'+key+'-'+type;
+            }
+          }
+        }
+        document.documentElement.className += rootClasses;
+      }
+    }
+    else {
+      console.log('Классы для мобильных не добавлены: в сборке отсутствует isMobile.js');
+    }
+  });
+
+</script>
+
+</head>
+
+<body>
+
+  <div id="panel">
+    <div class="page__inner page__inner--bg" style="background-image: url('img/page-bg.jpg');">
+
+      <div class="page__content">
+
+        <header class="page-header" role="banner">
+
+          <!-- <button class="toggle-button">☰</button> -->
+
+          <a href="index.html" class="logo">
+            <img src="img/logo.png" alt="logo">
+          </a>
+
+          <nav class="main-nav" role="navigation">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a href="page-choice.html" class="main-nav__link">
+                  Выбор дома
+                </a>
+              </li>
+              <li class="main-nav__item main-nav__item--active">
+                <a href="#" class="main-nav__link">
+                  Строящиеся объекты
+                </a>
+              </li>
+
+              <li class="main-nav__item">
+                <a href="" class="main-nav__link">
+                  Информация
+                </a>
+                <div class="main-nav__sublist-wrapper  main-nav__sublist-wrapper--lvl-2">
+                  <ul class="main-nav__list  main-nav__list--lvl-2">
+                    <li class="main-nav__item  main-nav__item--lvl-2">
+                      <a href="" class="main-nav__link  main-nav__link--lvl-2">
+                        Отчетность
+                      </a>
+                    </li>
+                    <li class="main-nav__item  main-nav__item--lvl-2">
+                      <a href="" class="main-nav__link  main-nav__link--lvl-2">
+                        О заводе
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="main-nav__item">
+                <a href="#section2" class="main-nav__link cd-scroll-down">
+                  Акции
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="page-about.html" class="main-nav__link">
+                  Ипотека <span class="red-label">от 8.7%</span>
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="page-about.html" class="main-nav__link">
+                  Фотогалерея
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="page-population.html" class="main-nav__link">
+                  Заселение
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="page-contacts.html" class="main-nav__link">
+                  Контакты
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="header-phone">+7 (4712) 37-71-38</div>
+
+          <button class="main-nav__open-button  burger"><span></span></button>
+
+        </header>
+
+
+        <main role="main" class="page__main">
+
+          <ul class="breadcrumbs">
+            <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Главная</a></li>
+            <li class="breadcrumbs__item">Отчетность</li>
+          </ul>
+          <h1 class="page__title">Отчетность</h1>
+
+          <div class="content-box">
+            <h2 class="mt-0">Собрание акционеров</h2>
+            <ul class="files-list">
+              <li class="files-list__item">
+                <a class="files-list__link" href="#">
+                  <svg class="files-list__icon files-list__icon--doc" width="22" height="26">
+                    <use xlink:href="img/sprite-svg.svg#file-icon-doc"></use>
+                  </svg>
+                  Отчет об итогах голосования на общем собрании 2018 г.</a>
+              </li>
+              <li class="files-list__item">
+                <a class="files-list__link" href="#">
+                  <svg class="files-list__icon files-list__icon--doc" width="22" height="26">
+                    <use xlink:href="img/sprite-svg.svg#file-icon-doc"></use>
+                  </svg>
+                  Информация о проведении общего собрания акционеров 2018 г.</a>
+              </li>
+              <li class="files-list__item">
+                <a class="files-list__link" href="#">
+                  <svg class="files-list__icon files-list__icon--doc" width="22" height="26">
+                    <use xlink:href="img/sprite-svg.svg#file-icon-doc"></use>
+                  </svg>
+                  Отчет об итогах голосования на общем собрании 2017 г.</a>
+              </li>
+              <li class="files-list__item">
+                <a class="files-list__link" href="#">
+                  <svg class="files-list__icon files-list__icon--doc" width="22" height="26">
+                    <use xlink:href="img/sprite-svg.svg#file-icon-doc"></use>
+                  </svg>
+                  Информация о проведении общего собрания акционеров 2017 г.</a>
+              </li>
+            </ul>
+            <h2>Годовой отчет</h2>
+            <ul class="files-list">
+              <li class="files-list__item">
+                <a class="files-list__link" href="#">
+                  <svg class="files-list__icon files-list__icon--pdf" width="22" height="26">
+                    <use xlink:href="img/sprite-svg.svg#file-icon-pdf"></use>
+                  </svg>
+                  Отчет об итогах голосования на общем собрании 2018 г.</a>
+              </li>
+              <li class="files-list__item">
+                <a class="files-list__link" href="#">
+                  <svg class="files-list__icon files-list__icon--pdf" width="22" height="26">
+                    <use xlink:href="img/sprite-svg.svg#file-icon-pdf"></use>
+                  </svg>
+                  Информация о проведении общего собрания акционеров 2018 г.</a>
+              </li>
+              <li class="files-list__item">
+                <a class="files-list__link" href="#">
+                  <svg class="files-list__icon files-list__icon--pdf" width="22" height="26">
+                    <use xlink:href="img/sprite-svg.svg#file-icon-pdf"></use>
+                  </svg>
+                  Отчет об итогах голосования на общем собрании 2017 г.</a>
+              </li>
+              <li class="files-list__item">
+                <a class="files-list__link" href="#">
+                  <svg class="files-list__icon files-list__icon--pdf" width="22" height="26">
+                    <use xlink:href="img/sprite-svg.svg#file-icon-pdf"></use>
+                  </svg>
+                  Информация о проведении общего собрания акционеров 2017 г.</a>
+              </li>
+            </ul>
+            <h2>Бухгалтерский баланс форма 1</h2>
+            <ul class="files-list">
+              <li class="files-list__item">
+                <a class="files-list__link" href="#">
+                  <svg class="files-list__icon files-list__icon--zip" width="22" height="26">
+                    <use xlink:href="img/sprite-svg.svg#file-icon-zip"></use>
+                  </svg>
+                  Отчет об итогах голосования на общем собрании 2018 г.</a>
+              </li>
+              <li class="files-list__item">
+                <a class="files-list__link" href="#">
+                  <svg class="files-list__icon files-list__icon--zip" width="22" height="26">
+                    <use xlink:href="img/sprite-svg.svg#file-icon-zip"></use>
+                  </svg>
+                  Информация о проведении общего собрания акционеров 2018 г.</a>
+              </li>
+              <li class="files-list__item">
+                <a class="files-list__link" href="#">
+                  <svg class="files-list__icon files-list__icon--rar" width="22" height="26">
+                    <use xlink:href="img/sprite-svg.svg#file-icon-rar"></use>
+                  </svg>
+                  Отчет об итогах голосования на общем собрании 2017 г.</a>
+              </li>
+              <li class="files-list__item">
+                <a class="files-list__link" href="#">
+                  <svg class="files-list__icon files-list__icon--rar" width="22" height="26">
+                    <use xlink:href="img/sprite-svg.svg#file-icon-rar"></use>
+                  </svg>
+                  Информация о проведении общего собрания акционеров 2017 г.</a>
+              </li>
+            </ul>
+          </div>
+
+        </main>
+
+      </div>
+
+    </div>
+  </div>
+
+  <nav id="menu">
+    <button class="main-nav__close-button burger burger--close"><span></span></button>
+    <nav class="main-nav main-nav--open" role="navigation">
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a href="page-choice.html" class="main-nav__link">
+            Выбор дома
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__link">
+            Строящиеся объекты
+          </a>
+        </li>
+        <li class="main-nav__item main-nav__item--active">
+          <a href="page-about.html" class="main-nav__link">
+            Информация
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="page-about.html" class="main-nav__link">
+            Акции
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="page-about.html" class="main-nav__link">
+            Ипотека <span class="red-label">от 8.7%</span>
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="page-about.html" class="main-nav__link">
+            Фотогалерея
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="page-population.html" class="main-nav__link">
+            Заселение
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="page-contacts.html" class="main-nav__link">
+            Контакты
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </nav>
+  <script
+    src="https://code.jquery.com/jquery-2.2.1.min.js"
+    integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+    crossorigin="anonymous"></script>
+  <script src="js/script.min.js"></script>
+
+</body>
+
+</html>
