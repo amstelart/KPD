@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>NTH start project</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  <!-- <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png"> -->
+  <!-- <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png"> -->
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet" media="screen">
+
+  <script>
+    // Маркер работающего javascript
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+    document.addEventListener('DOMContentLoaded', function(){
+      if (window.isMobile !== undefined) {
+        // console.log(isMobile);
+        if(isMobile.any) {
+          var rootClasses = ' is-mobile';
+          for (key in isMobile) {
+            if(typeof isMobile[key] === 'boolean' && isMobile[key] && key !== 'any') rootClasses += ' is-mobile--'+key;
+            if(typeof isMobile[key] === 'object' && key !== 'other') {
+              for (type in isMobile[key]) {
+                if(isMobile[key][type]) rootClasses += ' is-mobile--'+key+'-'+type;
+              }
+            }
+          }
+          document.documentElement.className += rootClasses;
+        }
+      }
+      else {
+        console.log('Классы для мобильных не добавлены: в сборке отсутствует isMobile.js');
+      }
+    });
+
+  </script>
+
+</head>
+
+<body>
+
+  <div id="panel">
+    <div class="page__inner page__inner--bg" style="background-image: url('img/page-bg.jpg');">
+
+      <div class="page__content">
+
+        <header class="page-header" role="banner">
+
+          <!-- <button class="toggle-button">☰</button> -->
+
+          <a href="index.html" class="logo">
+            <img src="img/logo.png" alt="logo">
+          </a>
+
+          <nav class="main-nav" role="navigation">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a href="page-choice.html" class="main-nav__link">
+                  Выбор дома
+                </a>
+              </li>
+              <li class="main-nav__item main-nav__item--active">
+                <a href="#" class="main-nav__link">
+                  Строящиеся объекты
+                </a>
+              </li>
+
+              <li class="main-nav__item">
+                <a href="" class="main-nav__link">
+                  Информация
+                </a>
+                <div class="main-nav__sublist-wrapper  main-nav__sublist-wrapper--lvl-2">
+                  <ul class="main-nav__list  main-nav__list--lvl-2">
+                    <li class="main-nav__item  main-nav__item--lvl-2">
+                      <a href="" class="main-nav__link  main-nav__link--lvl-2">
+                        Отчетность
+                      </a>
+                    </li>
+                    <li class="main-nav__item  main-nav__item--lvl-2">
+                      <a href="" class="main-nav__link  main-nav__link--lvl-2">
+                        О заводе
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="main-nav__item">
+                <a href="#section2" class="main-nav__link cd-scroll-down">
+                  Акции
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="page-about.html" class="main-nav__link">
+                  Ипотека <span class="red-label">от 8.7%</span>
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="page-about.html" class="main-nav__link">
+                  Фотогалерея
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="page-population.html" class="main-nav__link">
+                  Заселение
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="page-contacts.html" class="main-nav__link">
+                  Контакты
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="header-phone">+7 (4712) 37-71-38</div>
+
+          <button class="main-nav__open-button  burger"><span></span></button>
+
+        </header>
+
+
+        <main role="main" class="page__main">
+          <ul class="breadcrumbs">
+            <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Главная</a></li>
+            <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Статьи</a></li>
+            <li class="breadcrumbs__item">Только ГОСТ и никаких ТУ</li>
+          </ul>
+          <h1 class="page__title">Только ГОСТ и никаких ТУ</h1>
+
+          <div class="content-box">
+
+            <img src="img/fw-content-image.jpg" alt="">
+
+            <p>АО «Курский завод крупнопанельного домостроения им. А.Ф. Дериглазова» учреждено в соответствии с Указом Президента РФ от 01.07.1992 г. «Об организационных мерах по преобразованию государственных предприятий в акционерные общества». Свидетельство № 160 о государственной регистрации (перерегистрации) предприятия, выдано 25.12.1992 года, распоряжение № 247-Р Главы администрации промышленного района г. Курска.</p>
+
+            <p>АО «Курский завод КПД им. А.Ф. Дериглазова» является действующим предприятием по выпуску железобетонных конструкций для строительства жилых домов, столярных изделий, товарного бетона, раствора, фундаментных блоков, различных конструкций и оборудования. С 1994 года были организованы строительно-монтажные участки по возведению жилья не только в г.Курске, но и за его пределами: г.Фатеж, Марьино Рыльский район.</p>
+
+            <p>Выполняет проектные работы (проектирование); строительно-монтажные работы (благоустройство территории, земляные, изоляционные, каменные, кровельные, монтаж бетонных и железобетонных конструкций, монтаж металлоконструкций, отделочные, свайные, устройство полов, фасадные); строительство <a href="#">централизованных систем водоснабжения</a>, канализации и вентиляции (работы по устройству внутренних инженерных систем и оборудования, работы по устройству наружных инженерных сетей и коммуникаций).</p>
+
+            <p>Используемые материалы: бетон; жби; кабель, провод; кирпич (лицевой, рядовой, силикатный); материалы гидро- теплоизоляционные, кровля; металл (прокат листовой, сортовой, труба, нержавейка); метизы (крепеж, проволока,сетка); отделочные; раствор; трубы ПП, ПЭ, ПВХ; цемент, сухие смеси.</p>
+
+            <p>Предприятие имеет замкнутый цикл производства, практически не зависит от субподрядных организаций, производит работы нулевого цикла, монтаж крупногабаритных элементов, сантехнические и электротехнические работы, осуществляет прокладку инженерных сетей, ведет отделку квартир, производит благоустройство территорий, изоляционные и кровельные работы.</p>
+
+            <p>Все виды выпускаемых строительных конструкций имеют сертификат качества. Готовое жилье -жилые дома новой серии в панельном и каркаcно-монолитном исполнении, соответствуют современным архитектурно-планировочным решениям.</p>
+
+            <p>В результате переоснащения и переналадки оборудования, предприятие неуклонно завоевывает все новые рынки сбыта продукции, что в настоящих условиях общего спада производства в стране является немаловажным фактором.</p>
+
+            <figure class="image-box-lg">
+              <img
+              src="img/box-content-image.jpg"
+              alt="Классная картинка">
+              <figcaption>Подпись к изображению</figcaption>
+            </figure>
+
+            <p>Все виды выпускаемых строительных конструкций имеют сертификат качества. Готовое жилье -жилые дома новой серии в панельном и каркаcно-монолитном исполнении, соответствуют современным архитектурно-планировочным решениям.</p>
+
+            <p>В результате переоснащения и переналадки оборудования, предприятие неуклонно завоевывает все новые рынки сбыта продукции, что в настоящих условиях общего спада производства в стране является немаловажным фактором.</p>
+
+            <div class="pagination pagination--back">
+              <a href="page-photo-albums.html" class="pagination__item">
+                <svg class="pagination__item-icon" width="11" height="21">
+                  <use xlink:href="img/sprite-svg.svg#left-arrow"></use>
+                </svg>
+                Назад к статьям</a>
+            </div>
+
+          </div>
+
+        </main>
+
+      </div>
+
+    </div>
+  </div>
+
+  <nav id="menu">
+    <button class="main-nav__close-button burger burger--close"><span></span></button>
+    <nav class="main-nav main-nav--open" role="navigation">
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a href="page-choice.html" class="main-nav__link">
+            Выбор дома
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__link">
+            Строящиеся объекты
+          </a>
+        </li>
+        <li class="main-nav__item main-nav__item--active">
+          <a href="page-about.html" class="main-nav__link">
+            Информация
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="page-about.html" class="main-nav__link">
+            Акции
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="page-about.html" class="main-nav__link">
+            Ипотека <span class="red-label">от 8.7%</span>
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="page-about.html" class="main-nav__link">
+            Фотогалерея
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="page-population.html" class="main-nav__link">
+            Заселение
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="page-contacts.html" class="main-nav__link">
+            Контакты
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </nav>
+  <script
+    src="https://code.jquery.com/jquery-2.2.1.min.js"
+    integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+    crossorigin="anonymous"></script>
+  <script src="js/script.min.js"></script>
+
+</body>
+</html>
