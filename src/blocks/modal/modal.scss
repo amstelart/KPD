@@ -27,6 +27,7 @@ $z-index-modal:               100 !default;
   display: none;
   overflow: hidden;
   position: fixed;
+  padding-right: 0 !important;
   top: 0;
   right: 0;
   bottom: 0;
@@ -46,7 +47,7 @@ $z-index-modal:               100 !default;
     height: 100%;
 
     @media (min-width: $screen-lg) {
-      width: 600px;
+      width: 820px;
       height: auto;
 
       #{$block-name}--open & {
@@ -66,32 +67,33 @@ $z-index-modal:               100 !default;
   }
 
   &__header {
-    padding: 5px 40px 0 10px;
+    padding: 20px 70px 10px 50px;
     flex-shrink: 0;
   }
 
   &__title {
-    margin-top: ($line-height / 2);
-    margin-bottom: ($line-height / 2);
-    font-size: $font-size--h4;
-    line-height: 1.4;
+    font-family: 'Bebas Neue';
+    margin-top: 0;
+    margin-bottom: 0px;
+    font-size: 56px;
+    line-height: 1;
     font-weight: 700;
     color: currentColor;
   }
 
   &__close {
     position: absolute !important; // stylelint-disable-line  declaration-no-important
-    top: 5px;
-    right: 5px;
+    top: 20px;
+    right: 20px;
   }
 
   &__body {
-    padding: 0 10px;
+    padding: 0 50px;
     flex-grow: 1;
   }
 
   &__footer {
-    padding: 10px;
+    padding: 10px 50px 40px 50px;
     flex-shrink: 0;
   }
 
@@ -139,6 +141,41 @@ $z-index-modal:               100 !default;
       background-color: rgba(0, 0, 0, 0.4);
     }
 
+    .close {
+
+      top: 10px;
+      right: 10px;
+
+      span {
+        &:before,
+        &:after {
+          background: #fff;
+        }
+      }
+    }
+
+  }
+
+  &--request {
+
+    #{$block-name}__dialog {
+
+      @media (min-width: $screen-lg) {
+        width: 875px;
+        height: auto;
+
+        #{$block-name}--open & {
+          animation: modal-content-show $transition-time 1 both;
+        }
+      }
+    }
+  }
+
+  &--text {
+
+    #{$block-name}__header {
+      padding: 40px 70px 10px 50px;
+    }
   }
 }
 

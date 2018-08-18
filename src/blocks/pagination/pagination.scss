@@ -19,6 +19,8 @@ $border-color:                hsl(0, 0%, 60%) !default;
 
   &__item {
     display: block;
+    position: relative;
+    font-size: 16px;
     padding: 0.5em;
     min-width: 2.5em;
     border: 1px solid $border-color;
@@ -46,6 +48,29 @@ $border-color:                hsl(0, 0%, 60%) !default;
 
     &--active {
       background-color: $gray-lightest;
+    }
+  }
+
+  &__item-icon {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &--back {
+
+    #{$block-name}__item {
+      border: none;
+      color: #285ba6;
+      text-decoration: underline;
+      padding-left: 20px;
+
+      &:hover,
+      &:focus {
+        background-color: transparent;
+        text-decoration: none;
+      }
     }
   }
 }

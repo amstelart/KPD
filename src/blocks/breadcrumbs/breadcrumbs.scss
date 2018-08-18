@@ -14,11 +14,12 @@ $text-color:                  hsl(0, 0%, 10%) !default;
   padding: 0;
   list-style: none;
   margin: $line-height 0;
+  opacity: 0.8;
 
   &__item {
     display: inline-block;
     margin-right: 0.4em;
-    white-space: nowrap;
+    // white-space: nowrap;
     color: #fff;
 
     &:not(:last-child):after {

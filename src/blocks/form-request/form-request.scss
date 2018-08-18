@@ -1,25 +1,18 @@
-// В этом файле должны быть стили для БЭМ-блока content-box, его элементов,
+// В этом файле должны быть стили для БЭМ-блока form-request, его элементов,
 // модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
 // Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
 
-.content-box {
+.form-request {
 
   $block-name:                &; // #{$block-name}__element
 
-  font-family: 'Open Sans';
-  min-height: 700px;
-
-  &__two-row {
+  &__row {
     @include row;
   }
 
   &__col {
     @include col();
-    @include col(lg, 6);
-  }
-
-  p {
-    line-height: 1.6
+    @include col(xl, 6);
   }
 
 }

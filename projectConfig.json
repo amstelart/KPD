@@ -76,7 +76,11 @@
     "f-copyright": [],
     "main-section": [],
     "albums-catalog": [],
-    "files-list": []
+    "files-list": [],
+    "image-gallery": [],
+    "form-request": [],
+    "field-captcha": [],
+    "bank-selection": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

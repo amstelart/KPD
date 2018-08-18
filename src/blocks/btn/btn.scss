@@ -61,10 +61,10 @@ $border-radius:               3px !default;
     }
   }
 
-  // &__icon {
-  //   display: inline-block;
-  //   vertical-align: middle;
-  // }
+  &__icon {
+    display: inline-block;
+    vertical-align: middle;
+  }
 
 
 
@@ -88,6 +88,10 @@ $border-radius:               3px !default;
   //   }
   // }
 
+  &--block {
+    width: 100%;
+  }
+
   &--red {
     color: #fff;
     background-color: #d31023;
@@ -106,5 +110,38 @@ $border-radius:               3px !default;
         color: #fff;
         background-color: #d31023;
       }
+  }
+
+  &--print {
+    border: 2px solid #285ba6;
+    border-radius: 0;
+    background: transparent;
+    font-size: 16px;
+    padding: 0.4em 1em;
+    padding-left: 55px;
+    position: relative;
+
+    #{$block-name}__icon {
+      fill: #285ba6;
+      border-right: 2px solid #285ba6;
+      position: absolute;
+      width: 40px;
+      left: 0;
+      top: 0;
+      bottom: 0;
+
+      svg {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 9px;
+      }
+    }
+
+    &:hover,
+    &:focus {
+      background: transparent;
+      border-color: #285ba6;
+    }
   }
 }

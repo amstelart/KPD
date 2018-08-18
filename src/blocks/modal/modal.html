@@ -7,9 +7,9 @@
 (Нужно убрать пробел между символами @)
 Подробнее: https://www.npmjs.com/package/gulp-file-include
 
+-->
 
-
-<div id="modal-demo" class="modal" tabindex="-1" role="dialog">
+<!-- <div id="modal-demo" class="modal" tabindex="-1" role="dialog">
   <div class="modal__dialog" role="document">
     <div class="modal__content">
       <div class="modal__header">
@@ -24,6 +24,116 @@
       </div>
     </div>
   </div>
+</div> -->
+
+<div id="modal-request" class="modal modal--request" tabindex="-1" role="dialog">
+  <div class="modal__dialog" role="document">
+    <div class="modal__content">
+      <div class="modal__header">
+        <a href="#" class="close  modal__close" data-dismiss="modal" aria-label="Закрыть"><span></span></a>
+        <h4 class="modal__title">Заявка</h4>
+      </div>
+      <div class="modal__body">
+        <form action="" class="form-request">
+          <div class="form-request__row">
+            <div class="form-request__col">
+              <label class="field-text">
+                <span class="field-text__name">ФИО*</span>
+                <span class="field-text__input-wrap">
+                  <input class="field-text__input" type="text" id="" name="">
+                </span>
+              </label>
+              <label class="field-text">
+                <span class="field-text__name">Телефон*</span>
+                <span class="field-text__input-wrap">
+                  <input class="field-text__input" type="text" id="" name="">
+                </span>
+              </label>
+              <label class="field-text">
+                <span class="field-text__name">E-mail*</span>
+                <span class="field-text__input-wrap">
+                  <input class="field-text__input" type="text" id="" name="">
+                </span>
+              </label>
+              <div class="field-captcha">
+                <!-- заглушка которую нудно будет убрать -->
+                <div class="recaptcha-placeholder">
+                  <img src="img/recaptcha-placeholder.jpg" alt="">
+                </div>
+                <!-- заглушка которую нудно будет убрать -->
+              </div>
+            </div>
+
+            <div class="form-request__col">
+              <label class="field-select">
+                <div class="field-select__name">Квартира</div>
+                <div class="field-select__select-wrap">
+                  <select class="field-select__select" id="" name="">
+                    <option>Значение 1</option>
+                    <option>Значение 2</option>
+                    <option>Значение 3</option>
+                  </select>
+                </div>
+              </label>
+              <label class="field-text">
+                <span class="field-text__name">Сообщение</span>
+                <span class="field-text__input-wrap">
+                  <textarea class="field-text__input" rows="5"></textarea>
+                </span>
+              </label>
+              <div class="field-actions">
+                <button type="submit" class="btn btn--red btn--block">Отправить заявку</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal__footer">
+        <div class="form-request__row">
+          <div class="form-request__col">
+            <div class="field-actions">
+              <div class="field-actions__text">* — обязательные поля</div>
+            </div>
+          </div>
+          <div class="form-request__col">
+            <div class="field-checkbox">
+              <label class="field-checkbox__name">
+                <input class="field-checkbox__input" type="checkbox" id="" name="" checked>
+                <span class="field-checkbox__name-text">Принимаю</span>
+                <a href="#">Условия передачи информации</a>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
--->
+<div id="modal-text" class="modal modal--text" tabindex="-1" role="dialog">
+  <div class="modal__dialog" role="document">
+    <div class="modal__content">
+      <div class="modal__header">
+        <a href="#" class="close  modal__close" data-dismiss="modal" aria-label="Закрыть"><span></span></a>
+        <h4 class="modal__title">Условия заселения</h4>
+      </div>
+      <div class="modal__body">
+        <p>Передача квартиры осуществляется при условии исполнения Вами обязательств перед Продавцом по оплате цены договора в полном объеме.</p>
+        <p>Для приема квартир Вам необходимо явиться по вышеуказанному адресу и в назначенное Вам время.</p>
+        <p>При себе иметь паспорт, свидетельство о праве собственности и копию с него или выписку из ЕГРП, договор купли-продажи и копию с него, нотариально заверенную доверенность (если представитель) и копию с нее.</p>
+        <p>Если документы сданы на регистрацию, при себе иметь расписку.</p>
+        <p>Обращаем Ваше внимание, что процедура заселения ограничена по времени, просим не опаздывать.</p>
+        <p>В случае непринятия квартиры в указанную дату, для оформления документов на заселение Вам необходимо явиться в АО «Курский завод КПД им. А.Ф. Дериглазова» в отдел маркетинга недвижимости и иметь при себе все вышеперечисленные документы и акт приема передачи (если таковой имеется).</p>
+      </div>
+      <div class="modal__footer">
+        <button type="button" class="btn btn--print">
+          <span class="btn__icon">
+            <svg width="21" height="21">
+              <use xlink:href="img/sprite-svg.svg#print-icon"></use>
+            </svg>
+          </span>
+          Распечатать</button>
+      </div>
+    </div>
+  </div>
+</div>

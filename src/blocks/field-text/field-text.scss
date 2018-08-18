@@ -3,16 +3,16 @@
 // Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
 
 $gray-lighter:                hsl(0, 0%, 80%) !default;
-$border-color:                hsl(0, 0%, 60%) !default;
+$border-color:                #bcbcbc;
 
 $text-color--muted:           hsl(0, 0%, 50%) !default;
 
 $line-height:                 1.375em !default;
 
-$field-padding-vertical:      0.3em !default;
-$field-padding-horizontal:    0.7em !default;
+$field-padding-vertical:      0.7em;
+$field-padding-horizontal:    1em;
 
-$border-radius:               3px !default;
+$border-radius:               0;
 
 .field-text {
 
@@ -40,7 +40,7 @@ $border-radius:               3px !default;
     font-size: 1em;
     font-family: inherit;
     background-color: #fff;
-    border: 1px solid $border-color;
+    border: 2px solid $border-color;
     border-radius: $border-radius;
     appearance: textfield;
 

@@ -183,7 +183,7 @@ pre,
 address,
 figure {
   margin-top: ($line-height / 2);
-  margin-bottom: ($line-height / 2);
+  margin-bottom: ($line-height);
 }
 
 address {
@@ -295,6 +295,12 @@ pre {
 
 a {
   color: #1a5ab1;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: lighten(#1a5ab1, 10%);
+  }
 }
 
 
