@@ -11,7 +11,7 @@ $screen-lg:                   992px !default;
 $screen-xl:                   1200px !default;
 $screen-xxl:                  1800px !default;
 
-$menu-desktop-width:          $screen-xl !default;
+$menu-desktop-width:          $screen-lg;
 $toggler-part-height:         3px !default;
 $toggler-part-bg-color:       #000 !default;
 
@@ -86,6 +86,15 @@ $transition-time:             0.3s !default;
       & > #{$block-name}__link {
         color: #fff;
         background: #1b262d;
+
+        &:hover,
+        &:focus {
+          background: #1b262d;
+        }
+
+        .red-label {
+          background: #1b262d;
+        }
       }
     }
 
@@ -111,7 +120,7 @@ $transition-time:             0.3s !default;
     }
 
     .red-label {
-      background: #d31023;
+      background: #1b262d;
       color: #fff;
       text-transform: none;
       padding: 4px 0.5em;
