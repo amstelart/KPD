@@ -7,7 +7,6 @@
   $block-name:                &; // #{$block-name}__element
 
   font-family: 'Open Sans';
-  min-height: 700px;
 
   &__two-row {
     @include row;

@@ -87,11 +87,6 @@ $transition-time:             0.3s !default;
         color: #fff;
         background: #1b262d;
 
-        &:hover,
-        &:focus {
-          background: #1b262d;
-        }
-
         .red-label {
           background: #1b262d;
         }
@@ -120,7 +115,7 @@ $transition-time:             0.3s !default;
     }
 
     .red-label {
-      background: #1b262d;
+      background: #d31023;
       color: #fff;
       text-transform: none;
       padding: 4px 0.5em;
