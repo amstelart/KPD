@@ -94,7 +94,8 @@
     "./src/scss/print.scss"
   ],
   "singleCompiled": [
-    "./src/scss/blocks-library.scss"
+    "./src/scss/blocks-library.scss",
+    "./src/scss/new-pages.scss"
   ],
   "addJsBefore": [
     "./node_modules/slideout/dist/slideout.min.js",

@@ -1,7 +1,7 @@
 // Если на проекте jQuery
-$(window).on('load',function(){
-  $('#modal-start').modal('show');
-});
+// $(window).on('load',function(){
+//   $('#modal-start').modal('show');
+// });
 
 $( document ).ready(function() {
 
@@ -32,7 +32,8 @@ $( document ).ready(function() {
     'panel': document.getElementById('panel'),
     'menu': document.getElementById('menu'),
     'padding': 256,
-    'tolerance': false
+    'tolerance': false,
+    // 'touch': false
   });
 
   // Toggle button
