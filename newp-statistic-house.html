@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>КПД</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  <!-- <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png"> -->
+  <!-- <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png"> -->
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet" media="screen">
+  <link href="css/new-pages.css" rel="stylesheet" media="screen">
+
+  <script>
+    // Маркер работающего javascript
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+    document.addEventListener('DOMContentLoaded', function(){
+      if (window.isMobile !== undefined) {
+        // console.log(isMobile);
+        if(isMobile.any) {
+          var rootClasses = ' is-mobile';
+          for (key in isMobile) {
+            if(typeof isMobile[key] === 'boolean' && isMobile[key] && key !== 'any') rootClasses += ' is-mobile--'+key;
+            if(typeof isMobile[key] === 'object' && key !== 'other') {
+              for (type in isMobile[key]) {
+                if(isMobile[key][type]) rootClasses += ' is-mobile--'+key+'-'+type;
+              }
+            }
+          }
+          document.documentElement.className += rootClasses;
+        }
+      }
+      else {
+        console.log('Классы для мобильных не добавлены: в сборке отсутствует isMobile.js');
+      }
+    });
+
+  </script>
+
+</head>
+
+<body>
+
+  <div id="panel">
+    <div class="page__inner page__inner--bg" style="background-image: url('img/page-bg.jpg');">
+
+      <div class="page__content">
+
+        <header class="page-header" role="banner">
+
+          <!-- <button class="toggle-button">☰</button> -->
+
+          <a href="index.html" class="logo">
+            <img src="img/logo.png" alt="logo">
+          </a>
+
+          <nav class="main-nav" role="navigation">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a href="page-choice.html" class="main-nav__link">
+                  Выбор дома
+                </a>
+              </li>
+              <li class="main-nav__item main-nav__item--active">
+                <a href="#" class="main-nav__link">
+                  Строящиеся объекты
+                </a>
+              </li>
+
+              <li class="main-nav__item">
+                <a href="" class="main-nav__link">
+                  Информация
+                </a>
+                <div class="main-nav__sublist-wrapper  main-nav__sublist-wrapper--lvl-2">
+                  <ul class="main-nav__list  main-nav__list--lvl-2">
+                    <li class="main-nav__item  main-nav__item--lvl-2">
+                      <a href="" class="main-nav__link  main-nav__link--lvl-2">
+                        Отчетность
+                      </a>
+                    </li>
+                    <li class="main-nav__item  main-nav__item--lvl-2">
+                      <a href="" class="main-nav__link  main-nav__link--lvl-2">
+                        О заводе
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="main-nav__item">
+                <a href="#section2" class="main-nav__link cd-scroll-down">
+                  Акции
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="page-about.html" class="main-nav__link">
+                  Ипотека <span class="red-label">от 8.7%</span>
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="page-about.html" class="main-nav__link">
+                  Фотогалерея
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="page-population.html" class="main-nav__link">
+                  Заселение
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="page-contacts.html" class="main-nav__link">
+                  Контакты
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="header-phone">+7 (4712) 37-71-38</div>
+
+          <button class="main-nav__open-button  burger"><span></span></button>
+
+        </header>
+
+
+        <main role="main" class="page__main">
+          <ul class="breadcrumbs">
+            <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Главная</a></li>
+            <li class="breadcrumbs__item">Выбор дома - Отчет</li>
+          </ul>
+          <h1 class="page__title">Выбор дома</h1>
+          <div class="catalog__part-title">Квартира</div>
+
+          <div class="content-box">
+            <h3>Отчет</h3>
+
+            <div class="house-report">
+              <div class="house-report__row">
+                <div class="house-report__col">
+                  <div class="house-report__heading">
+                    <h4>Жилой дом №63 (стр. 8) мкр. 3, ж/р Северный</h4>
+                    <p>1-комнатных: 140; 2-комнатных: 150; 3-комнатных: 160</p>
+                  </div>
+                  <div class="table-mobile-scroll">
+                    <table class="table table-house-report">
+                      <tbody>
+                        <tr>
+                          <th></th>
+                          <th>
+                            <h5>Подъезд 1</h5>
+                            <span>1-комн.: 46</span>
+                            <span>2-комн.: 46</span>
+                            <span>3-комн.: 46</span>
+                          </th>
+                          <th>
+                            <h5>Подъезд 2</h5>
+                            <span>1-комн.: 46</span>
+                            <span>2-комн.: 46</span>
+                            <span>3-комн.: 46</span>
+                          </th>
+                          <th>
+                            <h5>Подъезд 3</h5>
+                            <span>1-комн.: 46</span>
+                            <span>2-комн.: 46</span>
+                            <span>3-комн.: 46</span>
+                          </th>
+                          <th>
+                            <h5>Подъезд 4</h5>
+                            <span>1-комн.: 46</span>
+                            <span>2-комн.: 46</span>
+                            <span>3-комн.: 46</span>
+                          </th>
+                          <th>
+                            <h5>Подъезд 5</h5>
+                            <span>1-комн.: 46</span>
+                            <span>2-комн.: 46</span>
+                            <span>3-комн.: 46</span>
+                          </th>
+                        </tr>
+                        <tr>
+                          <th>1-комн</th>
+                          <td>
+                            <span>Оформление 4</span>
+                            <span>Бронь 12</span>
+                            <span>Продано 23</span>
+                            <span>Не продано 45</span>
+                          </td>
+                          <td>
+                            <span>Оформление 4</span>
+                            <span>Бронь 12</span>
+                            <span>Продано 23</span>
+                            <span>Не продано 45</span>
+                          </td>
+                          <td>
+                            <span>Оформление 4</span>
+                            <span>Бронь 12</span>
+                            <span>Продано 23</span>
+                            <span>Не продано 45</span>
+                          </td>
+                          <td>
+                            <span>Оформление 4</span>
+                            <span>Бронь 12</span>
+                            <span>Продано 23</span>
+                            <span>Не продано 45</span>
+                          </td>
+                          <td>
+                            <span>Оформление 4</span>
+                            <span>Бронь 12</span>
+                            <span>Продано 23</span>
+                            <span>Не продано 45</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th>2-комн</th>
+                          <td>
+                            <span>Оформление 4</span>
+                            <span>Бронь 12</span>
+                            <span>Продано 23</span>
+                            <span>Не продано 45</span>
+                          </td>
+                          <td>
+                            <span>Оформление 4</span>
+                            <span>Бронь 12</span>
+                            <span>Продано 23</span>
+                            <span>Не продано 45</span>
+                          </td>
+                          <td>
+                            <span>Оформление 4</span>
+                            <span>Бронь 12</span>
+                            <span>Продано 23</span>
+                            <span>Не продано 45</span>
+                          </td>
+                          <td>
+                            <span>Оформление 4</span>
+                            <span>Бронь 12</span>
+                            <span>Продано 23</span>
+                            <span>Не продано 45</span>
+                          </td>
+                          <td>
+                            <span>Оформление 4</span>
+                            <span>Бронь 12</span>
+                            <span>Продано 23</span>
+                            <span>Не продано 45</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th>3-комн</th>
+                          <td>
+                            <span>Оформление 4</span>
+                            <span>Бронь 12</span>
+                            <span>Продано 23</span>
+                            <span>Не продано 45</span>
+                          </td>
+                          <td>
+                            <span>Оформление 4</span>
+                            <span>Бронь 12</span>
+                            <span>Продано 23</span>
+                            <span>Не продано 45</span>
+                          </td>
+                          <td>
+                            <span>Оформление 4</span>
+                            <span>Бронь 12</span>
+                            <span>Продано 23</span>
+                            <span>Не продано 45</span>
+                          </td>
+                          <td>
+                            <span>Оформление 4</span>
+                            <span>Бронь 12</span>
+                            <span>Продано 23</span>
+                            <span>Не продано 45</span>
+                          </td>
+                          <td>
+                            <span>Оформление 4</span>
+                            <span>Бронь 12</span>
+                            <span>Продано 23</span>
+                            <span>Не продано 45</span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <p><b>Не продано:</b> 1-комнатных: 140; 2-комнатных: 150; 3-комнатных: 160</p>
+                </div>
+                <div class="house-report__col">
+                  <div class="house-report__heading">
+                    <h4>Жилой дом №63 (стр. 8) мкр. 3, ж/р Северный</h4>
+                    <p>1-комнатных: 140; 2-комнатных: 150; 3-комнатных: 160</p>
+                  </div>
+                  <div class="table-mobile-scroll">
+                    <table class="table table-house-report">
+                      <tbody>
+                        <tr>
+                          <th></th>
+                          <th>
+                            <h5>Подъезд 1</h5>
+                            <span>1-комн.: 46</span>
+                            <span>2-комн.: 46</span>
+                            <span>3-комн.: 46</span>
+                          </th>
+                          <th>
+                            <h5>Подъезд 2</h5>
+                            <span>1-комн.: 46</span>
+                            <span>2-комн.: 46</span>
+                            <span>3-комн.: 46</span>
+                          </th>
+                          <th>
+                            <h5>Подъезд 3</h5>
+                            <span>1-комн.: 46</span>
+                            <span>2-комн.: 46</span>
+                            <span>3-комн.: 46</span>
+                          </th>
+                          <th>
+                            <h5>Подъезд 4</h5>
+                            <span>1-комн.: 46</span>
+                            <span>2-комн.: 46</span>
+                            <span>3-комн.: 46</span>
+                          </th>
+                          <th>
+                            <h5>Подъезд 5</h5>
+                            <span>1-комн.: 46</span>
+                            <span>2-комн.: 46</span>
+                            <span>3-комн.: 46</span>
+                          </th>
+                        </tr>
+                        <tr>
+                          <th>1-комн</th>
+                          <td>
+                            <span>Оформление 4</span>
+                            <span>Бронь 12</span>
+                            <span>Продано 23</span>
+                            <span>Не продано 45</span>
+                          </td>
+                          <td>
+                            <span>Оформление 4</span>
+                            <span>Бронь 12</span>
+                            <span>Продано 23</span>
+                            <span>Не продано 45</span>
+                          </td>
+                          <td>
+                            <span>Оформление 4</span>
+                            <span>Бронь 12</span>
+                            <span>Продано 23</span>
+                            <span>Не продано 45</span>
+                          </td>
+                          <td>
+                            <span>Оформление 4</span>
+                            <span>Бронь 12</span>
+                            <span>Продано 23</span>
+                            <span>Не продано 45</span>
+                          </td>
+                          <td>
+                            <span>Оформление 4</span>
+                            <span>Бронь 12</span>
+                            <span>Продано 23</span>
+                            <span>Не продано 45</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th>2-комн</th>
+                          <td>
+                            <span>Оформление 4</span>
+                            <span>Бронь 12</span>
+                            <span>Продано 23</span>
+                            <span>Не продано 45</span>
+                          </td>
+                          <td>
+                            <span>Оформление 4</span>
+                            <span>Бронь 12</span>
+                            <span>Продано 23</span>
+                            <span>Не продано 45</span>
+                          </td>
+                          <td>
+                            <span>Оформление 4</span>
+                            <span>Бронь 12</span>
+                            <span>Продано 23</span>
+                            <span>Не продано 45</span>
+                          </td>
+                          <td>
+                            <span>Оформление 4</span>
+                            <span>Бронь 12</span>
+                            <span>Продано 23</span>
+                            <span>Не продано 45</span>
+                          </td>
+                          <td>
+                            <span>Оформление 4</span>
+                            <span>Бронь 12</span>
+                            <span>Продано 23</span>
+                            <span>Не продано 45</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th>3-комн</th>
+                          <td>
+                            <span>Оформление 4</span>
+                            <span>Бронь 12</span>
+                            <span>Продано 23</span>
+                            <span>Не продано 45</span>
+                          </td>
+                          <td>
+                            <span>Оформление 4</span>
+                            <span>Бронь 12</span>
+                            <span>Продано 23</span>
+                            <span>Не продано 45</span>
+                          </td>
+                          <td>
+                            <span>Оформление 4</span>
+                            <span>Бронь 12</span>
+                            <span>Продано 23</span>
+                            <span>Не продано 45</span>
+                          </td>
+                          <td>
+                            <span>Оформление 4</span>
+                            <span>Бронь 12</span>
+                            <span>Продано 23</span>
+                            <span>Не продано 45</span>
+                          </td>
+                          <td>
+                            <span>Оформление 4</span>
+                            <span>Бронь 12</span>
+                            <span>Продано 23</span>
+                            <span>Не продано 45</span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <p><b>Не продано:</b> 1-комнатных: 140; 2-комнатных: 150; 3-комнатных: 160</p>
+                </div>
+              </div>
+              <div class="house-report__part">
+                <div class="table-mobile-scroll">
+                  <table class="table table-report">
+                    <tbody>
+                      <tr>
+                        <th class="row"><h4>Общий отчет</h4></th>
+                        <th>Оформление</th>
+                        <th>Бронь</th>
+                        <th>Не продано</th>
+                      </tr>
+                      <tr>
+                        <td class="row">Жилой дом №63 (стр. 8) мкр. 3, ж/р Северный</td>
+                        <td>63</td>
+                        <td>63</td>
+                        <td>63</td>
+                      </tr>
+                      <tr>
+                        <td class="row">Жилой дом №1 (стр. 1) г. Курчатов ул. Ефима Славского</td>
+                        <td>89</td>
+                        <td>89</td>
+                        <td>89</td>
+                      </tr>
+                      <tr>
+                        <td class="row">Жилой дом №3 (стр. 2) г. Курчатов ул. Ефима Славского</td>
+                        <td>36</td>
+                        <td>36</td>
+                        <td>36</td>
+                      </tr>
+                      <tr>
+                        <td class="row">Жилой дом №5 (стр. 3) г. Курчатов ул. Ефима Славского</td>
+                        <td>56</td>
+                        <td>56</td>
+                        <td>56</td>
+                      </tr>
+                      <tr>
+                        <td class="row">Жилой дом №7 (стр. 4) г. Курчатов ул. Ефима Славского</td>
+                        <td>67</td>
+                        <td>67</td>
+                        <td>67</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </main>
+
+      </div>
+
+    </div>
+  </div>
+
+  <nav id="menu">
+    <button class="main-nav__close-button burger burger--close"><span></span></button>
+    <nav class="main-nav main-nav--open" role="navigation">
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a href="page-choice.html" class="main-nav__link">
+            Выбор дома
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__link">
+            Строящиеся объекты
+          </a>
+        </li>
+        <li class="main-nav__item main-nav__item--active">
+          <a href="page-about.html" class="main-nav__link">
+            Информация
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="page-about.html" class="main-nav__link">
+            Акции
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="page-about.html" class="main-nav__link">
+            Ипотека <span class="red-label">от 8.7%</span>
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="page-about.html" class="main-nav__link">
+            Фотогалерея
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="page-population.html" class="main-nav__link">
+            Заселение
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="page-contacts.html" class="main-nav__link">
+            Контакты
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </nav>
+  <script
+    src="https://code.jquery.com/jquery-2.2.1.min.js"
+    integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+    crossorigin="anonymous"></script>
+  <script src="js/script.min.js"></script>
+
+</body>
+</html>

@@ -14,6 +14,7 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/style.min.css" rel="stylesheet" media="screen">
+  <link href="css/new-pages.css" rel="stylesheet" media="screen">
 
   <script>
     // Маркер работающего javascript
@@ -603,6 +604,152 @@
               </svg>
             </span>
             Распечатать</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-table-box" class="modal modal--table-box" tabindex="-1" role="dialog">
+    <div class="modal__dialog" role="document">
+      <div class="modal__content">
+        <!-- <div class="modal__header">
+          <a href="#" class="close  modal__close" data-dismiss="modal" aria-label="Закрыть"><span></span></a>
+          <h4 class="modal__title">Modal</h4>
+        </div> -->
+        <div class="modal__body">
+          <form action="" class="table-box-form">
+            <div class="form-header">
+              <span>1 этаж</span>
+              <span>2к</span>
+              <span>№34</span>
+            </div>
+            <div class="form-part">
+              <div class="fields-text-square">
+                <label class="field-text">
+                  <span class="field-text__name">Площадь без балкона</span>
+                  <span class="field-text__input-wrap">
+                    <input class="field-text__input" type="number" id="" name="">
+                    <span class="field-text__help-text">м<sup>2</sup></span>
+                  </span>
+                </label>
+                <label class="field-text">
+                  <span class="field-text__name">Площадь c балконом</span>
+                  <span class="field-text__input-wrap">
+                    <input class="field-text__input" type="number" id="" name="">
+                    <span class="field-text__help-text">м<sup>2</sup></span>
+                  </span>
+                </label>
+                <label class="field-text">
+                  <span class="field-text__name">Площадь общая</span>
+                  <span class="field-text__input-wrap">
+                    <input class="field-text__input" type="number" id="" name="">
+                    <span class="field-text__help-text">м<sup>2</sup></span>
+                  </span>
+                </label>
+              </div>
+            </div>
+            <div class="form-part">
+              <h6 class="form-part__title">Статус</h6>
+              <div class="form-row">
+                <div class="field-checkbox form-col">
+                  <label class="field-checkbox__name">
+                    <input class="field-checkbox__input" type="checkbox" id="" name="">
+                    <span class="field-checkbox__name-text">Оформление</span>
+                  </label>
+                </div>
+                <label class="field-text form-col">
+                  <span class="field-text__input-wrap">
+                    <span class="field-text__help-text">имп</span>
+                    <input class="field-text__input" type="text" id="" name="">
+                  </span>
+                </label>
+              </div>
+              <div class="form-row">
+                <div class="field-checkbox form-col">
+                  <label class="field-checkbox__name">
+                    <input class="field-checkbox__input" type="checkbox" id="" name="">
+                    <span class="field-checkbox__name-text">Бронь</span>
+                  </label>
+                </div>
+                <label class="field-text form-col">
+                  <span class="field-text__input-wrap">
+                    <span class="field-text__help-text">имп</span>
+                    <input class="field-text__input" type="text" id="" name="">
+                  </span>
+                </label>
+              </div>
+              <div class="form-row">
+                <div class="field-checkbox form-col">
+                  <label class="field-checkbox__name">
+                    <input class="field-checkbox__input" type="checkbox" id="" name="">
+                    <span class="field-checkbox__name-text">Продано</span>
+                  </label>
+                </div>
+                <label class="field-text form-col">
+                  <span class="field-text__input-wrap">
+                    <span class="field-text__help-text">имп</span>
+                    <input class="field-text__input" type="text" id="" name="">
+                  </span>
+                </label>
+              </div>
+            </div>
+            <div class="form-part">
+              <h6 class="form-part__title">Документы</h6>
+              <div class="form-row">
+                <div class="field-checkbox form-col">
+                  <label class="field-checkbox__name">
+                    <input class="field-checkbox__input" type="checkbox" id="" name="">
+                    <span class="field-checkbox__name-text">Права ЕГРН</span>
+                  </label>
+                </div>
+                <label class="field-text form-col">
+                  <span class="field-text__input-wrap">
+                    <span class="field-text__help-text">имп</span>
+                    <input class="field-text__input" type="text" id="" name="">
+                  </span>
+                </label>
+              </div>
+              <div class="form-row">
+                <div class="field-checkbox form-col">
+                  <label class="field-checkbox__name">
+                    <input class="field-checkbox__input" type="checkbox" id="" name="">
+                    <span class="field-checkbox__name-text">Сдано на регистрацию</span>
+                  </label>
+                </div>
+                <label class="field-text form-col">
+                  <span class="field-text__input-wrap">
+                    <span class="field-text__help-text">имп</span>
+                    <input class="field-text__input" type="text" id="" name="">
+                  </span>
+                </label>
+              </div>
+              <div class="form-row">
+                <div class="field-checkbox form-col">
+                  <label class="field-checkbox__name">
+                    <input class="field-checkbox__input" type="checkbox" id="" name="">
+                    <span class="field-checkbox__name-text">Получены документы</span>
+                  </label>
+                </div>
+                <label class="field-text form-col">
+                  <span class="field-text__input-wrap">
+                    <span class="field-text__help-text">имп</span>
+                    <input class="field-text__input" type="text" id="" name="">
+                  </span>
+                </label>
+              </div>
+            </div>
+            <div class="form-part">
+              <label class="field-text">
+                <span class="field-text__input-wrap">
+                  <textarea class="field-text__input" rows="5" placeholder="Пример текста"></textarea>
+                </span>
+              </label>
+            </div>
+            <div class="field-action">
+              <button type="button" class="btn btn-green">Применить</button>
+              <button type="button" class="btn btn-outline" data-dismiss="modal">Отмена</button>
+            </div>
+          </form>
         </div>
       </div>
     </div>
